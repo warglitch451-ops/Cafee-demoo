@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Table | Luxury Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Playfair Display', 'Times New Roman', serif;
+            background: #fef9f0;
+            color: #2c2b28;
+            line-height: 1.6;
+        }
+        /* Navigation */
+        nav {
+            background: #1a1a1a;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #d4af37;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #d4af37;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&h=700&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-text h1 {
+            font-size: 4rem;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            background: #d4af37;
+            color: #1a1a1a;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 40px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #b8962e;
+            transform: scale(1.05);
+        }
+        /* About Section */
+        .about {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.5rem;
+            color: #d4af37;
+            margin-bottom: 1rem;
+        }
+        .about p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        .features {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .feature {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            width: 250px;
+            transition: 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+        }
+        .feature h3 {
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) {
+            .hero-text h1 { font-size: 2.5rem; }
+            nav { flex-direction: column; }
+            .nav-links { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">THE ROYAL TABLE</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Exquisite Dining</h1>
+            <p>Experience the finest flavors in an atmosphere of timeless elegance.</p>
+            <a href="menu.html" class="btn">Explore Menu</a>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>Welcome to The Royal Table</h2>
+        <p>Nestled in the heart of the city, our restaurant offers a culinary journey inspired by global cuisines with a touch of royal heritage. Every dish is crafted with passion and the finest ingredients.</p>
+        <div class="features">
+            <div class="feature">
+                <h3>🌟 Michelin Starred Chef</h3>
+                <p>Our head chef brings 20 years of excellence.</p>
+            </div>
+            <div class="feature">
+                <h3>🍷 Private Wine Cellar</h3>
+                <p>Over 500 labels from around the world.</p>
+            </div>
+            <div class="feature">
+                <h3>✨ Bespoke Events</h3>
+                <p>Tailored menus for your special occasions.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Royal Table – Luxury Dining. All rights reserved.</p>
+    </footer>
+</body>
+</html>
