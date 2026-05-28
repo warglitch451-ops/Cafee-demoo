@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | The Royal Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Playfair Display', 'Times New Roman', serif;
+            background: #fef9f0;
+            color: #2c2b28;
+        }
+        nav {
+            background: #1a1a1a;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #d4af37;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: #d4af37; }
+        .menu-header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1600&h=400&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .menu-header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+        }
+        .menu-section {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .category {
+            margin-bottom: 3rem;
+        }
+        .category h2 {
+            font-size: 2rem;
+            color: #d4af37;
+            border-bottom: 2px solid #d4af37;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px dashed #ccc;
+            padding: 1rem 0;
+        }
+        .item-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .item-desc {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.2rem;
+        }
+        .item-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d4af37;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) {
+            .menu-header h1 { font-size: 2rem; }
+            nav { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">THE ROYAL TABLE</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="menu-header">
+        <h1>Our Culinary Artistry</h1>
+    </div>
+
+    <div class="menu-section">
+        <div class="category">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <div><div class="item-name">Truffle Arancini</div><div class="item-desc">Crispy risotto balls, black truffle, parmesan foam</div></div>
+                <div class="item-price">₹650</div>
+            </div>
+            <div class="menu-item">
+                <div><div class="item-name">Scallop Crudo</div><div class="item-desc">Fresh scallops, yuzu, finger lime, coriander oil</div></div>
+                <div class="item-price">₹890</div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <div><div class="item-name">Wagyu Beef Tenderloin</div><div class="item-desc">Charcoal grilled, truffle mash, red wine jus</div></div>
+                <div class="item-price">₹2,400</div>
+            </div>
+            <div class="menu-item">
+                <div><div class="item-name">Lobster Thermidor</div><div class="item-desc">Butter-poached lobster, creamy cognac sauce</div></div>
+                <div class="item-price">₹2,800</div>
+            </div>
+            <div class="menu-item">
+                <div><div class="item-name">Wild Mushroom Risotto</div><div class="item-desc">Arborio rice, porcini, parmesan, truffle oil</div></div>
+                <div class="item-price">₹1,450</div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <div><div class="item-name">Molten Chocolate Cake</div><div class="item-desc">Dark chocolate ganache, vanilla bean ice cream</div></div>
+                <div class="item-price">₹550</div>
+            </div>
+            <div class="menu-item">
+                <div><div class="item-name">Crème Brûlée</div><div class="item-desc">Classic vanilla, burnt sugar crust</div></div>
+                <div class="item-price">₹490</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Royal Table – Luxury Dining. All rights reserved.</p>
+    </footer>
+</body>
+</html>
